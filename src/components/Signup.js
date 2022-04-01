@@ -19,7 +19,7 @@ export function Signup() {
         if (passwordRef.current.value !== passwordConfirmRef.current.value) {
             return setError("Passwords do not match")
         }
-        
+
         try {
             setError("");
             setLoading(true);
@@ -30,7 +30,7 @@ export function Signup() {
         }
         setLoading(false);
     }
-
+console.log(loading);
     return (
         <>
             <Card>
